@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike. Just Do It. Nike.com</title>
+    <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a1a0748b49.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-color: rgb(231, 231, 231);
+            border-radius: 50%;
+            padding: 15px;
+            width: 40px;
+            height: 40px;
+            color: #000 !important;
+            fill: black !important;
+            stroke: black !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            display: none;
+        }
+
+        .swiper-button-next i,
+        .swiper-button-prev i {
+            font-size: 16px;
+        }
+
+        details p {
+            margin-left: 1rem;
+            color: #707072;
+            font-size: 0.8rem;
+            font-weight: 600 !important;
+
+        }
+
+        .greytext,.greyContent p {
+            color: #707072;
+        }
+
+        @media (min-width: 768px) {
+            .hiddenitems {
+                max-height: 0;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            .group-hover .hiddenitems {
+                max-height: 1000px;
+                /* or a large enough value to fit your content */
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar1 -->
+    <div class="nav1 flex justify-between items-center mx-4 lg:mx-8 lg:my-2">
+        <div class="navright">
+            <img class="w-[4.5rem] lg:hidden" src="Assets/nike logo.webp">
+            <div class="hidden lg:flex lg:space-x-6">
+                <p></p>
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px"
+                    fill="none">
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M13.182 3.733c-.012-.039-.012-.039-.012-.072a.966.966 0 01.922-1.007.97.97 0 011.007.922.964.964 0 01-.917 1.007c-.027.004-.062 0-.101 0-.016.004-.04.004-.056.022-.056.084.14.073-.005.44 0 0 0 .038-.012.077-.012.14-.08.562-.096.793.029.04.04.05.029.13a6.003 6.003 0 01-.09.534c-.04.14-.096.174-.147.202-.073.298-.095.545-.281.905-.022.276-.045.35-.106.484-.017.4.01.46-.281 1.101-.08.3-.017.507.05.821.068.321.276.461.298.793.05.771.017 1.305-.163 1.907l.135.348c.18.084.618.326.36.675.343.19.865.394 1.28.781.176.147.35.315.513.5.316.057.276.08.506.231.675.438 1.749 1.304 2.373 1.906.112.067.147.112.236.163.01.023.017.034.01.04-.026.072-.026.072-.06.14.039.04.095.073.134.107.04.005.04-.006.096-.017.079.073.18.135.214.135.106-.022.084-.005.185-.1.029-.035.084 0 .084 0 .04-.04.113-.119.214-.176.079-.045.23-.045.23-.045.052.006.04.051.029.073-.057.023-.18.057-.247.108-.152.14-.276.353-.276.353.299-.033.484.045.719.023.136-.005.237.006.377-.09 0 0 .14-.096.265-.14.118-.05.23-.017.33.062.069.084.119.084 0 .196-.044.045-.1.096-.18.17-.133.123-.313.291-.5.432a3.11 3.11 0 01-.527.315c-.338.23-.26.174-.523.394-.03.022-.124.078-.163.106-.107.062-.135.006-.197-.118 0 0-.028-.045-.08-.14-.05-.107-.09-.23-.072-.23-.062-.007-.331-.344-.331-.41-.063-.013-.304-.26-.31-.31l-.214-.18c-.253.044-.31-.113-.961-.608-.08-.006-.197-.05-.36-.174-.298-.253-1.007-.815-1.124-.883-.13-.067-.281-.134-.383-.214-.146-.022-.218-.05-.298-.067-.08-.022-.14-.057-.326-.079-.303-.045-.618-.18-.911-.337-.14-.073-.264-.107-.382-.169-.27-.124-.506-.236-.686-.28a2.148 2.148 0 01-.568-.226c-.061-.034-.095-.06-.134-.073-.09-.022-.153.006-.192.022-.23.108-.438.203-.636.31-.18.09-.348.186-.528.286a7.971 7.971 0 01-.534.254s-.534.253-.832.348c-.26.197-.787.546-1.107.715-.158.073-.467.252-.608.292-.08.061-.371.258-.596.421-.18.124-.31.231-.31.231-.106.084-.101.13-.28.045a1.491 1.491 0 00-.13.096c-.14.095-.146.073-.202.067-.101.08-.113.04-.197.13-.061.084 0 .061-.118.106-.028.006-.04.04-.057.056-.094.073-.1.293-.325.304-.135.09-.107.203-.197.191 0 .102-.18.23-.214.23-.292.096-.304-.118-.646.035-.045.016-.113.072-.197.084-.152.022-.332-.006-.444-.102a1.93 1.93 0 01-.326-.398c-.051-.13-.017-.208.163-.332.073-.045.084-.079.208-.084.06-.024.045.01.15-.024.064-.016.064-.005.193-.005.028-.017.067-.022.124-.045.1-.034.196-.062.196-.062s.028-.023.124-.01c.078-.035.169-.08.214-.097-.012-.124.005-.124.06-.174.08-.062.09-.05.148-.01.022-.007.039-.013.027-.035-.01-.073-.061-.107-.045-.247-.022-.057-.061-.129-.05-.174.01-.045.028-.069.056-.079.029-.012.045.006.057.022.028.034.05.135.05.135.006.118.04.26.152.18.067-.062.084-.242.214-.203l.096.085c.084-.073.084-.073.14-.107 0 0-.08-.073-.012-.135.045-.039.108-.067.208-.175.276-.292.422-.42.714-.657a6.811 6.811 0 011.699-.939c.146-.174.28-.286.585-.304.377-.606 1.085-1.136 1.248-1.22.134-.23.19-.208.365-.247.135-.107.175-.107.23-.214.063-.23-.112-.86.383-.877.112-.146.078-.112.196-.248a2.19 2.19 0 01-.118-.5c-.005-.016-.196-.157-.13-.332a2.33 2.33 0 01-.268-.432.202.202 0 01-.063-.012c-.022-.005-.055-.005-.09-.005-.078.196-.163.208-.303.253-.26.512-.35.731-1.046 1.142-.28.298-.382.64-.382.634a.46.46 0 00-.012.321c-.045.107-.027.124-.027.124.01.045.056.106.106.112.079.023.169.023.158.118-.011.113-.163.09-.237.073-.275-.05-.185-.23-.365-.174-.141.085-.196.348-.416.31-.028-.023-.017-.074.006-.119.028-.06.084-.118.056-.14-.146.04-.433.123-.433.123-.135.04-.281-.039-.147-.124.063-.022.153-.05.265-.118 0 0 .062-.072-.057-.039a1.144 1.144 0 01-.416.045s-.257-.039-.292-.056c-.028-.022-.061-.107.017-.1a2.71 2.71 0 00.563-.068c.095-.035.28-.14.382-.186 0 0 .113-.157.18-.19.107-.114.19-.18.28-.299.09-.18.192-.46.5-.906a4.16 4.16 0 01.535-.646s.062-.338.343-.573c.063-.14.157-.31.259-.462a1.7 1.7 0 00.106-.168c.09-.13.186-.377.518-.41 0 0 .147-.102.197-.175.084-.073.074-.186.14-.259-.106-.106-.365-.309-.382-.573a.85.85 0 01.265-.692c.196-.185.398-.275.646-.258.309.055.366.157.455.258.09.101.13.04.163.146.259.073.248.045.237.236.045.057.106.108.1.214.085-.175.108-.208.344-.399.062-.157.1-.315.15-.478.052-.146.114-.298.154-.41-.04-.326.06-.377.196-.664-.022-.039-.016-.05-.006-.112.057-.192.136-.433.186-.596 0 0 .017-.063.085-.063.06-.202.157-.579.179-.663.062-.208.029-.287-.01-.41-.012-.04-.006-.09-.03-.136a5.483 5.483 0 01-.19-.41c-.028-.073-.08-.354-.08-.354-.004-.062-.004-.09-.004-.09z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px"
+                    fill="none">
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M8.045 10.99V7.73L6.19 10.37 3.115 9.35l1.94 2.64-1.905 2.64 3.045-1.005 1.855 2.64v-3.26l3.11-1.02-3.115-.995zm12.84 1.02l-6.82 7.49H8.21l6.825-7.49L8.21 4.5h5.856l6.819 7.51z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="navleft flex space-x-4 mx-3">
+            <img class="w-6 lg:hidden" src="Assets/icons8-magnifying-glass.svg" alt="">
+            <img class="w-6 lg:hidden" src="Assets/user-alt-1-svgrepo-com.svg" alt="">
+            <img class="w-6 lg:hidden" src="Assets/bag-shopping-svgrepo-com.svg" alt="">
+            <img class="w-[1.2rem] lg:hidden" src="Assets/hamburger-svgrepo-com.svg" alt="">
+            <div class="hidden lg:flex items-center lg:space-x-4">
+                <p class="lg:text-[12px] lg:font-bold">Find a Store</p>
+                <p class="lg:text-xs">|</p>
+                <p class="lg:text-[12px] lg:font-bold">Help</p>
+                <p class="lg:text-xs">|</p>
+                <p class="lg:text-[12px] lg:font-bold">Join us</p>
+                <p class="lg:text-xs">|</p>
+                <p class="lg:text-[12px] lg:font-bold">Sign in</p>
+            </div>
+        </div>
+    </div>
+    <!-- navbar2 -->
+    <div class="nav2 hidden lg:flex lg:justify-between items-center lg:mx-12">
+        <div class="nright hidden lg:flex">
+            <img class="w-[4.5rem]" src="Assets/nike logo.webp">
+        </div>
+        <div class="nmid">
+            <ul class="lg:flex lg:space-x-5">
+                <li class="lg:text-[16px] lg:font-bold">New</li>
+                <li class="lg:text-[16px] lg:font-bold">Men</li>
+                <li class="lg:text-[16px] lg:font-bold">Women</li>
+                <li class="lg:text-[16px] lg:font-bold">Kids</li>
+                <li class="lg:text-[16px] lg:font-bold">Jordan</li>
+                <li class="lg:text-[16px] lg:font-bold">Sale</li>
+            </ul>
+        </div>
+        <div class="nleft lg:flex lg:space-x-5">
+            <img class="w-6" src="Assets/icons8-magnifying-glass.svg" alt="">
+            <img class="w-6" src="Assets/heart-svgrepo-com.svg" alt="">
+            <img class="w-6" src="Assets/bag-shopping-svgrepo-com.svg" alt="">
+        </div>
+    </div>
+    <!-- first section -->
+    <div class="1stImage">
+        <img class="md:hidden" src="Assets/first image mobile.jpg" alt="">
+        <img class="hidden md:block" src="Assets/nike-just-do-it (2).jpg" alt="">
+        <div class="textcontent text-center mt-5 lg:mt-7">
+            <h1
+                class="text-3xl font-extrabold leading-7 mx-5 lg:text-6xl lg:font-black lg:tracking-[-0.2rem] lg:leading-[3.2rem]">
+                WINNING HITS <br> DIFFERENT</h1>
+            <p class="mx-14 mt-3 leading-6 lg:text-[1.2rem] lg:mt-5">Icons built for the bright lights, on and off the
+                court.</p>
+            <button class="bg-black rounded-full text-white font-bold py-2 px-4 mt-5 lg:mt-6">Shop</button>
+        </div>
+    </div>
+    <!-- second section -->
+    <div class="mt-14  grid grid-cols-1 md:grid-cols-2">
+        <div class="image1 relative">
+            <div class="">
+                <img class="" src="Assets/nike-just-do-it (3).jpg" alt="">
+            </div>
+            <div class="absolute mx-5 my-5 bottom-0">
+                <p class="text-white font-bold">School Essentials</p>
+                <p class="text-white text-xl font-extrabold">Gear to Win the Year</p>
+                <button class="bg-white rounded-full text-black font-bold py-2 px-4 mt-5 lg:mt-6">Shop</button>
+            </div>
+        </div>
+        <div class="image2 relative">
+            <div class="">
+                <img class="" src="Assets/nike-just-do-it (11).jpg" alt="">
+            </div>
+            <div class="absolute mx-5 my-5 bottom-0">
+                <p class="text-white font-bold">Redifine Your Rotation</p>
+                <p class="text-white text-xl font-extrabold">Air Force 1 & More</p>
+                <button class="bg-white rounded-full text-black font-bold py-2 px-4 mt-5 lg:mt-6">Shop</button>
+            </div>
+        </div>
+        <div class="image3 relative">
+            <div class="">
+                <img class="" src="Assets/nike-just-do-it (1).jpg" alt="">
+            </div>
+            <div class="absolute mx-5 my-5 bottom-0">
+                <p class="text-white font-bold">Distant Gratification</p>
+                <p class="text-white text-xl font-extrabold">Nike Pegasus Trail 5 GTX</p>
+                <button class="bg-white rounded-full text-black font-bold py-2 px-4 mt-5 lg:mt-6">Shop</button>
+            </div>
+        </div>
+        <div class="image4 relative">
+            <div class="">
+                <img class="" src="Assets/nike-just-do-it.jpg" alt="">
+            </div>
+            <div class="absolute mx-5 my-5 bottom-0">
+                <p class="text-white font-bold">New for Soccer</p>
+                <p class="text-white text-xl font-extrabold">Mad Ambition Pack</p>
+                <button class="bg-white rounded-full text-black font-bold py-2 px-4 mt-5 lg:mt-6">Shop</button>
+            </div>
+        </div>
+    </div>
+    <!-- third section -->
+    <div class="textcontent text-center mt-14 lg:mt-7">
+        <h1
+            class="text-3xl font-extrabold leading-7 mx-5 tracking-tighter lg:text-6xl lg:font-black lg:tracking-[-0.2rem] lg:leading-[3.2rem]">
+            NEW THIS WEEK</h1>
+        <p class="mx-10 mt-3 leading-6 lg:text-[1.2rem] lg:mt-5">Shop Vintage Varsity styles and other New Arrivals.</p>
+        <button class="bg-black rounded-full text-white font-bold py-2 px-4 mt-5 lg:mt-6">Shop</button>
+    </div>
+    <!-- forth section -->
+    <div class="imgesSwitch mt-14">
+        <div class="md:hidden">
+            <img src="Assets/nike-just-do-it (5).jpg" alt="">
+        </div>
+        <div class="hidden md:block">
+            <img src="Assets/nike-just-do-it (4).jpg" alt="">
+        </div>
+    </div>
+    <!-- fifth section -->
+    <div class="Shop mt-14">
+        <div>
+            <p
+                class="text-3xl font-extrabold leading-7 mx-4 tracking-tighter lg:text-[2rem] lg:font-black lg:tracking-[-0.2rem] lg:leading-[3.2rem] lg:mx-12 lg:transform lg:scale-y-150">
+                SHOP BY CLASSICS</p>
+        </div>
+        <div class="swiper-container relative w-full overflow-hidden mt-5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="Assets/air jordan.jpg" alt="Air Jordan"></div>
+                <div class="swiper-slide"><img src="Assets/dunk.jpg" alt="Dunk"></div>
+                <div class="swiper-slide"><img src="Assets/air force 1.jpg" alt="Air Force 1"></div>
+                <div class="swiper-slide"><img src="Assets/airmax.jpg" alt="Air Max"></div>
+                <div class="swiper-slide"><img src="Assets/vemero.jpg" alt="Vemero"></div>
+                <div class="swiper-slide"><img src="Assets/blazer.jpg" alt="Blazer"></div>
+            </div>
+
+            <!-- Navigation buttons positioned at the bottom -->
+            <div class="swiper-button-next absolute bottom-2 right-2 mr-5 lg:mr-24"><i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev absolute bottom-2 left-2 ml-5 lg:ml-24"><i class="fas fa-chevron-left"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- sixth section -->
+    <div class="mt-24">
+        <div class="content space-y-5 md:space-y-0 md:flex md:justify-between md:mx-5 lg:mx-36 group">
+            <div>
+                <div class="ml-4">
+                    <button id="btn-featured"
+                        class="toggle-featured text-lg font-semibold text-[#333333] focus:outline-none"
+                        data-content="featured">
+                        Featured
+                    </button>
+                </div>
+                <div id="content-featured"
+                    class="featured-content ml-10 md:ml-4 mt-5 space-y-3 hidden md:block transition-opacity duration-500 opacity-0 md:opacity-100"
+                    data-content="featured">
+                    <p class="text-base font-medium text-[#707072]">Air Force 1</p>
+                    <p class="text-base font-medium text-[#707072]">Jordan 1</p>
+                    <p class="text-base font-medium text-[#707072]">Metcon</p>
+                    <p class="text-base font-medium text-[#707072]">Air Max 270</p>
+                    <div
+                        class="hiddenitems space-y-3 md:overflow-hidden transition-all duration-500 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 group-hover:max-h-screen">
+                        <p class="text-base font-medium text-[#707072]">Air Max 97</p>
+                        <p class="text-base font-medium text-[#707072]">Air Max 90</p>
+                        <p class="text-base font-medium text-[#707072]">Blazer</p>
+                        <p class="text-base font-medium text-[#707072]">Pegasus</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="ml-4 mt-4 md:mt-0">
+                    <button id="btn-shoes"
+                        class="toggle-featured text-lg font-semibold text-[#333333] focus:outline-none"
+                        data-content="featured">
+                        Shoes
+                    </button>
+                </div>
+                <div id="content-shoes"
+                    class="featured-content ml-10 md:ml-4 mt-5 space-y-3 hidden md:block transition-opacity duration-500 opacity-0 md:opacity-100"
+                    data-content="featured">
+                    <p class="text-base font-medium text-[#707072]">All Shoes</p>
+                    <p class="text-base font-medium text-[#707072]">Jordan Shoes</p>
+                    <p class="text-base font-medium text-[#707072]">Running Shoes</p>
+                    <p class="text-base font-medium text-[#707072]">Basketball Shoes</p>
+                    <div
+                        class="hiddenitems space-y-3 md:overflow-hidden transition-all duration-500 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 group-hover:max-h-screen">
+                        <p class="text-base font-medium text-[#707072]">Tennis Shoes</p>
+                        <p class="text-base font-medium text-[#707072]">Training Shoes</p>
+                        <p class="text-base font-medium text-[#707072]">Custom Shoes</p>
+                        <p class="text-base font-medium text-[#707072]">Sale Shoes</p>
+                        <p class="text-base font-medium text-[#707072]">Soccer Cleats</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="ml-4 mt-4 md:mt-0">
+                    <button id="btn-clothing"
+                        class="toggle-featured text-lg font-semibold text-[#333333] focus:outline-none"
+                        data-content="featured">
+                        Clothing
+                    </button>
+                </div>
+                <div id="content-clothing"
+                    class="featured-content ml-10 md:ml-4 mt-5 space-y-3 hidden md:block transition-opacity duration-500 opacity-0 md:opacity-100"
+                    data-content="featured">
+                    <p class="text-base font-medium text-[#707072]">All Clothing</p>
+                    <p class="text-base font-medium text-[#707072]">Tops & T-Shirts</p>
+                    <p class="text-base font-medium text-[#707072]">Shorts</p>
+                    <p class="text-base font-medium text-[#707072]">Hoodies & Pullovers</p>
+                    <div
+                        class="hiddenitems space-y-3 md:overflow-hidden transition-all duration-500 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 group-hover:max-h-screen">
+                        <p class="text-base font-medium text-[#707072]">Joggers & Sweatpants</p>
+                        <p class="text-base font-medium text-[#707072]">Sports Bras</p>
+                        <p class="text-base font-medium text-[#707072]">Pants & Tights</p>
+                        <p class="text-base font-medium text-[#707072]">Socks</p>
+                        <p class="text-base font-medium text-[#707072]">Yoga</p>
+                        <p class="text-base font-medium text-[#707072]">NikeLab</p>
+                        <p class="text-base font-medium text-[#707072]">Plus Size</p>
+                        <p class="text-base font-medium text-[#707072]">Big & Tall</p>
+                        <p class="text-base font-medium text-[#707072]">Sale Clothing</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="ml-4 mt-4 md:mt-0">
+                    <button id="btn-kids"
+                        class="toggle-featured text-lg font-semibold text-[#333333] focus:outline-none"
+                        data-content="featured">
+                        Kids
+                    </button>
+                </div>
+                <div id="content-kids"
+                    class="featured-content ml-10 md:ml-4 mt-5 space-y-3 hidden md:block transition-opacity duration-500 opacity-0 md:opacity-100"
+                    data-content="featured">
+                    <p class="text-base font-medium text-[#707072]">Infant & Toddler Shoes</p>
+                    <p class="text-base font-medium text-[#707072]">Kids Shoes</p>
+                    <p class="text-base font-medium text-[#707072]">Kids Basketball Shoes</p>
+                    <p class="text-base font-medium text-[#707072]">Kids Running Shoes</p>
+                    <div
+                        class="hiddenitems space-y-3 md:overflow-hidden transition-all duration-500 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 group-hover:max-h-screen">
+                        <p class="text-base font-medium text-[#707072]">Kids Jordan Shoes</p>
+                        <p class="text-base font-medium text-[#707072]">Kids Clothing</p>
+                        <p class="text-base font-medium text-[#707072]">Kids Backpacks</p>
+                        <p class="text-base font-medium text-[#707072]">Kids Socks</p>
+                        <p class="text-base font-medium text-[#000000]">Kids Sale</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="border-t-neutral-100 mt-12 mx-8 md:hidden">
+    <hr class="md:border-t-neutral-300 md:mt-24 md:mx-10 hidden md:block">
+    <!-- seventh section -->
+    <!-- for low screen -->
+    <div class="mt-12 md:mt-6 md:ml-4 lg:hidden">
+        <div class="ml-4 space-y-6">
+            <details class="space-y-5 text-[0.9rem] font-medium">
+                <summary>Resources</summary>
+                <p>Gift Cards</p>
+                <p>Find a Store</p>
+                <p>Membership</p>
+                <p>Nike x NBA</p>
+                <p>Nike Journal</p>
+                <p>Site Feedback</p>
+            </details>
+            <hr class="border-t-neutral-100 mt-3 mx-8">
+            <details class="space-y-5 text-[0.9rem] font-medium">
+                <summary>Help</summary>
+                <p>Get Help</p>
+                <p>Order Status</p>
+                <p>Shipping and Delivery</p>
+                <p>Returns</p>
+                <p>Order Cancellation</p>
+                <p>Payment Options</p>
+                <p>Gift Card Balance</p>
+                <p>Contact Us</p>
+            </details>
+            <hr class="border-t-neutral-100 mt-3 mx-8">
+            <details class="space-y-5 text-[0.9rem] font-medium">
+                <summary>Company</summary>
+                <p>About Nike</p>
+                <p>News</p>
+                <p>Careers</p>
+                <p>Investors</p>
+                <p>Purpose</p>
+                <p>Sustainability</p>
+            </details>
+            <hr class="border-t-neutral-100 mt-3 mx-8">
+            <details class="space-y-5 text-[0.9rem] font-medium">
+                <summary>Promotions & Discounts</summary>
+                <p>Student</p>
+                <p>Military</p>
+                <p>Teacher</p>
+                <p>First Responders & Medical Professionals</p>
+                <p>Birthday</p>
+            </details>
+            <hr class="border-t-neutral-100 mt-3 mx-8">
+            <div class="flex space-x-2">
+                <img class="w-4 text-[#707072]" src="Assets/global-grid-logo-svgrepo-com.svg" alt="">
+                <p class="text-sm text-[#707072]">United States</p>
+            </div>
+            <hr class="border-t-neutral-100 mt-3 mx-8">
+        </div>
+    </div>
+    <!-- for high screen -->
+    <div class="hidden lg:block lg:mt-24 lg:mx-20">
+        <div class="lg:flex lg:justify-between">
+            <div>
+                <div class="lg:text-lg lg:font-semibold"> <!-- Container for H2 -->
+                    <h2>Resources</h2>
+                </div>
+                <div class="greytext lg:mt-5 lg:space-y-4 lg:text-[0.9rem] lg:font-medium">
+                    <!-- Container for the text -->
+                    <p>Gift Cards</p>
+                    <p>Find a Store</p>
+                    <p>Membership</p>
+                    <p>Nike x NBA</p>
+                    <p>Nike Journal</p>
+                    <p>Site Feedback</p>
+                </div>
+            </div>
+            <hr class="border-t-neutral-300 mt-3 mx-8 lg:hidden">
+
+            <div>
+                <div class="lg:text-lg lg:font-semibold"> <!-- Container for H2 -->
+                    <h2>Help</h2>
+                </div>
+                <div class="greytext lg:mt-5 lg:space-y-4 lg:text-[0.9rem] lg:font-medium">
+                    <!-- Container for the text -->
+                    <p>Get Help</p>
+                    <p>Order Status</p>
+                    <p>Shipping and Delivery</p>
+                    <p>Returns</p>
+                    <p>Order Cancellation</p>
+                    <p>Payment Options</p>
+                    <p>Gift Card Balance</p>
+                    <p>Contact Us</p>
+                </div>
+            </div>
+            <hr class="border-t-neutral-300 mt-3 mx-8 lg:hidden">
+
+            <div>
+                <div class="lg:text-lg lg:font-semibold"> <!-- Container for H2 -->
+                    <h2>Company</h2>
+                </div>
+                <div class="greytext lg:mt-5 lg:space-y-4 lg:text-[0.9rem] lg:font-medium">
+                    <!-- Container for the text -->
+                    <p>About Nike</p>
+                    <p>News</p>
+                    <p>Careers</p>
+                    <p>Investors</p>
+                    <p>Purpose</p>
+                    <p>Sustainability</p>
+                </div>
+            </div>
+            <hr class="border-t-neutral-300 mt-3 mx-8 lg:hidden">
+
+            <div>
+                <div class="lg:text-lg lg:font-semibold"> <!-- Container for H2 -->
+                    <h2>Promotions & Discounts</h2>
+                </div>
+                <div class="greytext lg:mt-5 lg:space-y-4 lg:text-[0.9rem] lg:font-medium">
+                    <!-- Container for the text -->
+                    <p>Student</p>
+                    <p>Military</p>
+                    <p>Teacher</p>
+                    <p>First Responders & Medical Professionals</p>
+                    <p>Birthday</p>
+                </div>
+            </div>
+            <hr class="lg:border-t-neutral-300 mt-3 lg:mx-8 lg:hidden">
+            <div class="lg:space-x-1 lg:flex lg:items-start">
+                <img class="w-4 text-[#707072]" src="Assets/global-grid-logo-svgrepo-com.svg" alt="">
+                <p class="text-sm text-[#707072]">United States</p>
+            </div>
+            <hr class="border-t-neutral-100 mt-3 mx-8 lg:hidden">
+        </div>
+    </div>
+    <!-- eighth section -->
+    <div class="mt-8 ml-4 mb-20 md:ml-8 lg:mt-24 lg:mx-20">
+        <div class="greyContent space-y-3 lg:flex lg:flex-wrap lg:justify-between lg:space-x-2 lg:space-y-2">
+            <p class="hidden"></p> <!-- Empty p element -->
+            <p class=" text-[0.9rem] font-medium" verticle>&copy; 2024 Nike,Inc.All Rights Reserved</p>
+            <p class="text-[0.9rem] font-medium">Guides</p>
+            <p class="text-[0.9rem] font-medium">Terms of Sale</p>
+            <p class="text-[0.9rem] font-medium">Terms of Use</p>
+            <p class="text-[0.9rem] font-medium">Nike Privacy Policy</p>
+            <div class="flex">
+                <img src="Assets/image.png" alt="">
+                <p class="text-[0.9rem] lg:font-medium">Your Privacy Choices</p>
+            </div>
+            <p class="text-[0.9rem] font-medium">CA Supply Chains Act</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+                1280: {
+                    slidesPerView: 5,
+                }
+            },
+        });
+    </script>
+</body>
+
+</html>
